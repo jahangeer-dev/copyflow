@@ -1,4 +1,4 @@
-# 🚀 NPM Release Guide for Fast Copy CLI
+# 🚀 NPM Release Guide for CopyFlow
 
 ## 📋 Pre-Release Checklist
 

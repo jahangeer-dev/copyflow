@@ -74,11 +74,11 @@ function getFileHash(filePath) {
 // After copy
 function showHelp() {
     console.log(`
-Fast Copy - Efficient file copying tool for large files
+CopyFlow - Seamless large file copying with smart retry and progress tracking
 
 Usage:
-  fast-copy <source> <destination>
-  fast-copy --help
+  copyflow <source> <destination>
+  copyflow --help
 
 Options:
   --help, -h       Show this help message
@@ -86,9 +86,9 @@ Options:
   --retries, -r    Number of retry attempts (default: 3)
 
 Examples:
-  fast-copy /path/to/source.mp4 /media/usb/destination.mp4
-  fast-copy --verify /large-file.zip /backup/large-file.zip
-  fast-copy --retries 5 /video.mkv /external/video.mkv
+  copyflow /path/to/source.mp4 /media/usb/destination.mp4
+  copyflow --verify /large-file.zip /backup/large-file.zip
+  copyflow --retries 5 /video.mkv /external/video.mkv
 `);
 }
 async function main() {

@@ -1,6 +1,6 @@
-# Fast Copy CLI
+# CopyFlow
 
-A high-performance command-line tool for copying large files efficiently. Designed especially for copying large files (like videos) to USB drives and external storage.
+A high-performance command-line tool for copying large files efficiently. Designed especially for copying large files (like videos) to USB drives and external storage with seamless flow and smart retry logic.
 
 ## Features
 
@@ -20,29 +20,29 @@ npm run install-global
 
 ### Or use directly with npx
 ```bash
-npx fast-copy-cli <source> <destination>
+npx copyflow <source> <destination>
 ```
 
 ## Usage
 
 ### Basic usage
 ```bash
-fast-copy /path/to/source.mp4 /media/usb/destination.mp4
+copyflow /path/to/source.mp4 /media/usb/destination.mp4
 ```
 
 ### With integrity verification
 ```bash
-fast-copy --verify /large-file.zip /backup/large-file.zip
+copyflow --verify /large-file.zip /backup/large-file.zip
 ```
 
 ### With custom retry count
 ```bash
-fast-copy --retries 5 /video.mkv /external/video.mkv
+copyflow --retries 5 /video.mkv /external/video.mkv
 ```
 
 ### Show help
 ```bash
-fast-copy --help
+copyflow --help
 ```
 
 ## Options
@@ -55,17 +55,17 @@ fast-copy --help
 
 Copy a 2GB video file to USB drive:
 ```bash
-fast-copy /home/user/movie.mp4 /media/usb/movies/movie.mp4
+copyflow /home/user/movie.mp4 /media/usb/movies/movie.mp4
 ```
 
 Copy with verification (recommended for important files):
 ```bash
-fast-copy --verify /important/document.pdf /backup/document.pdf
+copyflow --verify /important/document.pdf /backup/document.pdf
 ```
 
 Copy with 10 retry attempts:
 ```bash
-fast-copy --retries 10 /large/database.sql /external/backup.sql
+copyflow --retries 10 /large/database.sql /external/backup.sql
 ```
 
 ## Development
@@ -87,10 +87,10 @@ npm run install-global
 npm run uninstall-global
 ```
 
-## What Makes Fast Copy Unique?
+## What Makes CopyFlow Unique?
 
 ### 🎯 **Specialized for Large Files**
-Unlike standard `cp` or GUI file managers, Fast Copy is specifically optimized for large files (2GB+ videos, databases, backups) that often cause issues with traditional copying methods.
+Unlike standard `cp` or GUI file managers, CopyFlow is specifically optimized for large files (2GB+ videos, databases, backups) that often cause issues with traditional copying methods.
 
 ### 🔄 **Smart Retry System**
 - Automatic retry with configurable attempts (1-10 retries)
@@ -126,7 +126,7 @@ Unlike standard `cp` or GUI file managers, Fast Copy is specifically optimized f
 
 ## Comparison with Alternatives
 
-| Feature | Fast Copy | Standard `cp` | GUI File Managers | `rsync` |
+| Feature | CopyFlow | Standard `cp` | GUI File Managers | `rsync` |
 |---------|-----------|---------------|-------------------|---------|
 | Progress Bar | ✅ Real-time | ❌ None | ✅ Basic | ✅ Basic |
 | Speed Display | ✅ MB/s | ❌ None | ✅ Limited | ✅ Basic |
@@ -156,4 +156,4 @@ Unlike standard `cp` or GUI file managers, Fast Copy is specifically optimized f
 - No integrity verification
 - Can't be automated or scripted
 
-Fast Copy fills the gap by providing a simple, reliable, and visually appealing solution specifically for large file transfers.
+CopyFlow fills the gap by providing a simple, reliable, and visually appealing solution specifically for large file transfers.
