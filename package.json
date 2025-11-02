@@ -1,0 +1,58 @@
+{
+  "name": "fast-copy-cli",
+  "version": "1.0.0",
+  "description": "A high-performance CLI tool for copying large files efficiently with progress tracking, retry logic, and integrity verification",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "fast-copy": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc && chmod +x dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "start": "node dist/index.js",
+    "install-global": "npm run build && npm install -g .",
+    "uninstall-global": "npm uninstall -g fast-copy-cli",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "file-copy",
+    "large-files",
+    "cli",
+    "copy",
+    "transfer",
+    "progress",
+    "streaming",
+    "usb",
+    "backup",
+    "integrity",
+    "retry",
+    "fast"
+  ],
+  "author": "Jahangeer i <jahangeer.dev7@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jahangeer-dev/fast-copy-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahangeer-dev/fast-copy-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jahangeer-dev/fast-copy-cli/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "preferGlobal": true
+}

@@ -1,0 +1,35 @@
+# Source files
+src/
+*.ts
+tsconfig.json
+TUTORIAL.md
+
+# Development files
+.vscode/
+.git/
+.gitignore
+node_modules/
+*.log
+
+# Test files
+test/
+tests/
+*.test.js
+*.test.ts
+
+# Build artifacts
+*.tgz
+
+# Media files
+*.mp4
+*.mkv
+*.avi
+
+# IDE files
+.DS_Store
+Thumbs.db
+.idea/
+
+# Environment files
+.env
+.env.local
